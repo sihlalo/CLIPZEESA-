@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>CLIPZEE - Free Worldwide</title><style>*{margin:0;padding:0;box-sizing:border-box}body{background:#000;color:#fff;font-family:Arial;overflow:hidden}#header{position:fixed;top:0;width:100%;height:50px;background:#000;z-index:10;display:flex;align-items:center;justify-content:space-between;padding:0 10px;border-bottom:1px solid #222} #logo{font-weight:900;font-size:22px;letter-spacing:1px}.tabs{display:flex;gap:5px;background:#1a1a1a;border-radius:20px;padding:3px}.tab{padding:6px 14px;border-radius:15px;font-size:13px;cursor:pointer}.tab.active{background:#fff;color:#000;font-weight:bold}.feed{height:100vh;overflow-y:scroll;scroll-snap-type:y mandatory}.video-box{height:100vh;scroll-snap-align:start;position:relative;background:#111;display:flex;align-items:center;justify-content:center}.video-box video{width:100%;height:100%;object-fit:cover}.overlay{position:absolute;bottom:80px;left:10px;right:60px}.user{font-weight:bold;font-size:16px}.caption{font-size:13px;margin-top:5px;opacity:0.9}.actions{position:absolute;right:10px;bottom:100px;display:flex;flex-direction:column;gap:20px;align-items:center}.act{display:flex;flex-direction:column;align-items:center;font-size:12px}.act span{font-size:26px}.bottom{position:fixed;bottom:0;width:100%;height:70px;background:#000;display:flex;justify-content:space-around;align-items:center;border-top:1px solid #222;z-index:10}.b{font-size:12px;text-align:center}.b div{font-size:22px}.plus{background:#0095f6;width:45px;height:35px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:bold}#login{position:fixed;top:0;left:0;width:100%;height:100%;background:#000;z-index:100;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px}.inp{width:100%;max-width:300px;padding:12px;margin:8px 0;border-radius:10px;border:none;background:#1a1a1a;color:#fff} .btn{width:100%;max-width:300px;padding:12px;background:#fff;color:#000;border:none;border-radius:10px;font-weight:bold;margin-top:10px}</style></head><body><div id="login"><h1>CLIPZEE</h1><p style="margin:10px 0;opacity:0.7">🌍 FREE WORLDWIDE - Made in Manzini with R0</p><input class="inp" id="u" placeholder="Username e.g. Thabo"><input class="inp" id="c" placeholder="Country e.g. SZ"><input class="inp" id="p" type="password" placeholder="PIN e.g. 1234"><button class="btn" onclick="enter()">ENTER CLIPZEE</button><p style="font-size:11px;margin-top:15px;opacity:0.5">FreeZone 10min • Challenges • Wallet locked until 100k</p></div><div id="header"><div id="logo">CLIPZEE</div><div class="tabs"><div class="tab active">🌍 FreeZone Worldwide</div><div class="tab">🏆 Challenges</div></div><div style="font-size:20px">🔍</div></div><div class="feed"><div class="video-box"><video src="https://www.w3schools.com/html/mov_bbb.mp4" autoplay loop muted></video><div class="overlay"><div class="user">@Thabo SZ ✅</div><div class="caption">Bringing energy to FreeZone 🔥 #DanceChallenge #FreeZoneWorldwide Made in Manzini with R0 🇸🇿</div></div><div class="actions"><div class="act"><span>❤️</span>24.5K</div><div class="act"><span>💬</span>1.2K</div><div class="act"><span>⬇️</span>892</div><div class="act"><span>↗️</span>1.8K</div></div></div></div><div class="bottom"><div class="b"><div>🏠</div>Home</div><div class="b"><div>🏆</div>Challenges</div><div class="b"><div class="plus">+</div>Upload</div><div class="b"><div>💼🔒</div>Wallet</div><div class="b"><div>⚙️</div>Settings</div></div><script>function enter(){let u=document.getElementById('u').value;if(!u){alert('Enter username');return}document.getElementById('login').style.display='none'}</script></body></html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>CLIPZEE - Viral Shorts</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#000;color:#fff;font-family:-apple-system,BlinkMacSystemFont,sans-serif;overflow:hidden;height:100vh;width:100vw}
+#app{height:100vh;width:100vw;overflow-y:scroll;scroll-snap-type:y mandatory;-webkit-overflow-scrolling:touch}
+.clip{height:100vh;width:100vw;position:relative;scroll-snap-align:start;background:#111;display:flex;align-items:center;justify-content:center}
+.clip video{height:100%;width:100%;object-fit:cover}
+.overlay{position:absolute;inset:0;background:linear-gradient(transparent 60%,rgba(0,0,0,0.8));pointer-events:none}
+.left{position:absolute;bottom:20px;left:12px;right:80px;pointer-events:none}
+.left h3{font-size:15px;margin-bottom:4px}
+.left p{font-size:13px;opacity:0.9}
+.right{position:absolute;right:8px;bottom:80px;display:flex;flex-direction:column;gap:22px;align-items:center}
+.btn{width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,0.15);display:flex;align-items:center;justify-content:center;font-size:22px;backdrop-filter:blur(10px);border:none;color:#fff}
+.btn.liked{background:#ff0050;color:#fff}
+.logo{position:fixed;top:12px;left:12px;z-index:99;font-weight:900;font-size:22px;letter-spacing:-1px}
+.logo span{color:#ff0050}
+.topbar{position:fixed;top:12px;left:0;right:0;z-index:98;display:flex;justify-content:center;gap:20px;font-size:14px;font-weight:600}
+.topbar div{opacity:0.6}.topbar div.active{opacity:1;border-bottom:2px solid #fff;padding-bottom:2px}
+.progress{position:absolute;top:0;left:0;height:3px;background:#ff0050;width:0%;z-index:10;transition:width 0.1s}
+</style>
+</head>
+<body>
+<div class="logo">CLIP<span>ZEE</span></div>
+<div class="topbar"><div class="active">For You</div><div>Following</div><div>Live</div></div>
+<div id="app"></div>
+<script>
+const videos=[
+"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+];
+const users=["@sihlalo_swazi","@clipzee_official","@viral_eswatini","@manzini_creator","@mzansi_vibes"];
+const descs=["POV: You found the best app in Eswatini 🔥 #clipzee #fyp","No cap this hits different 😭❤️ #viral","Manzini stand up!! 🇸🇿 #eswatini","Rate this 1-10?? 👀","Follow for daily fire clips 💯"];
+let liked=[false,false,false,false,false,false];
+let likes=[12400,8934,45200,3210,98700,5432];
+function render(){
+let html="";
+videos.forEach((v,i)=>{
+html+=`
+<div class="clip" id="clip${i}">
+<div class="progress" id="p${i}"></div>
+<video src="${v}" loop playsinline onclick="this.paused?this.play():this.pause()" id="v${i}"></video>
+<div class="overlay"></div>
+<div class="left">
+<h3>${users[i%users.length]} • <span style="border:1px solid #fff;padding:1px 6px;border-radius:4px;font-size:11px">Follow</span></h3>
+<p>${descs[i%descs.length]}</p>
+<p style="margin-top:8px">♫ Original sound - clipzee viral mix</p>
+</div>
+<div class="right">
+<div style="text-align:center"><div class="btn" style="background:#fff;color:#000;width:52px;height:52px;border:2px solid #fff;overflow:hidden"><img src="https://i.pravatar.cc/100?img=${i+5}" style="width:100%;height:100%;object-fit:cover"></div><div style="background:#ff0050;border-radius:50%;width:18px;height:18px;margin:-10px auto 0;display:flex;align-items:center;justify-content:center;font-size:12px">+</div></div>
+<button class="btn ${liked[i]?'liked':''}" onclick="like(${i})"><i class="fa-solid fa-heart"></i></button><span style="font-size:12px;font-weight:600;margin-top:-18px">${(likes[i]/1000).toFixed(1)}K</span>
+<button class="btn"><i class="fa-solid fa-comment-dots"></i></button><span style="font-size:12px;font-weight:600;margin-top:-18px">${Math.floor(Math.random()*500)+50}</span>
+<button class="btn"><i class="fa-solid fa-share"></i></button><span style="font-size:12px;font-weight:600;margin-top:-18px">Share</span>
+<button class="btn" onclick="next(${i})"><i class="fa-solid fa-bookmark"></i></button>
+</div>
+</div>`;
+});
+document.getElementById("app").innerHTML=html;
+videos.forEach((_,i)=>{
+const vid=document.getElementById("v"+i);
+const prog=document.getElementById("p"+i);
+vid.addEventListener("timeupdate",()=>{prog.style.width=(vid.currentTime/vid.duration*100)+"%";});
+});
+observe();
+}
+function like(i){
+liked[i]=!liked[i];
+likes[i]+=liked[i]?1:-1;
+render();
+setTimeout(()=>{document.getElementById("app").scrollTop=i*window.innerHeight;},50);
+}
+function next(i){
+document.getElementById("app").scrollTo({top:(i+1)*window.innerHeight,behavior:"smooth"});
+}
+function observe(){
+const obs=new IntersectionObserver((entries)=>{
+entries.forEach(e=>{
+const vid=e.target.querySelector("video");
+if(e.isIntersecting){vid.play().catch(()=>{});}else{vid.pause();}
+});
+},{threshold:0.7});
+document.querySelectorAll(".clip").forEach(c=>obs.observe(c));
+}
+render();
+</script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>CLIPZEE - Viral Shorts</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#000;color:#fff;font-family:-apple-system,BlinkMacSystemFont,sans-serif;overflow:hidden;height:100vh;width:100vw}
+#app{height:100vh;width:100vw;overflow-y:scroll;scroll-snap-type:y mandatory;-webkit-overflow-scrolling:touch}
+.clip{height:100vh;width:100vw;position:relative;scroll-snap-align:start;background:#111;display:flex;align-items:center;justify-content:center}
+.clip video{height:100%;width:100%;object-fit:cover}
+.overlay{position:absolute;inset:0;background:linear-gradient(transparent 60%,rgba(0,0,0,0.8));pointer-events:none}
+.left{position:absolute;bottom:20px;left:12px;right:80px;pointer-events:none}
+.left h3{font-size:15px;margin-bottom:4px}
+.left p{font-size:13px;opacity:0.9}
+.right{position:absolute;right:8px;bottom:80px;display:flex;flex-direction:column;gap:22px;align-items:center}
+.btn{width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,0.15);display:flex;align-items:center;justify-content:center;font-size:22px;backdrop-filter:blur(10px);border:none;color:#fff}
+.btn.liked{background:#ff0050;color:#fff}
+.logo{position:fixed;top:12px;left:12px;z-index:99;font-weight:900;font-size:22px;letter-spacing:-1px}
+.logo span{color:#ff0050}
+.topbar{position:fixed;top:12px;left:0;right:0;z-index:98;display:flex;justify-content:center;gap:20px;font-size:14px;font-weight:600}
+.topbar div{opacity:0.6}.topbar div.active{opacity:1;border-bottom:2px solid #fff;padding-bottom:2px}
+.progress{position:absolute;top:0;left:0;height:3px;background:#ff0050;width:0%;z-index:10;transition:width 0.1s}
+</style>
+</head>
+<body>
+<div class="logo">CLIP<span>ZEE</span></div>
+<div class="topbar"><div class="active">For You</div><div>Following</div><div>Live</div></div>
+<div id="app"></div>
+<script>
+const videos=[
+"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+];
+const users=["@sihlalo_swazi","@clipzee_official","@viral_eswatini","@manzini_creator","@mzansi_vibes"];
+const descs=["POV: You found the best app in Eswatini 🔥 #clipzee #fyp","No cap this hits different 😭❤️ #viral","Manzini stand up!! 🇸🇿 #eswatini","Rate this 1-10?? 👀","Follow for daily fire clips 💯"];
+let liked=[false,false,false,false,false,false];
+let likes=[12400,8934,45200,3210,98700,5432];
+function render(){
+let html="";
+videos.forEach((v,i)=>{
+html+=`
+<div class="clip" id="clip${i}">
+<div class="progress" id="p${i}"></div>
+<video src="${v}" loop playsinline onclick="this.paused?this.play():this.pause()" id="v${i}"></video>
+<div class="overlay"></div>
+<div class="left">
+<h3>${users[i%users.length]} • <span style="border:1px solid #fff;padding:1px 6px;border-radius:4px;font-size:11px">Follow</span></h3>
+<p>${descs[i%descs.length]}</p>
+<p style="margin-top:8px">♫ Original sound - clipzee viral mix</p>
+</div>
+<div class="right">
+<div style="text-align:center"><div class="btn" style="background:#fff;color:#000;width:52px;height:52px;border:2px solid #fff;overflow:hidden"><img src="https://i.pravatar.cc/100?img=${i+5}" style="width:100%;height:100%;object-fit:cover"></div><div style="background:#ff0050;border-radius:50%;width:18px;height:18px;margin:-10px auto 0;display:flex;align-items:center;justify-content:center;font-size:12px">+</div></div>
+<button class="btn ${liked[i]?'liked':''}" onclick="like(${i})"><i class="fa-solid fa-heart"></i></button><span style="font-size:12px;font-weight:600;margin-top:-18px">${(likes[i]/1000).toFixed(1)}K</span>
+<button class="btn"><i class="fa-solid fa-comment-dots"></i></button><span style="font-size:12px;font-weight:600;margin-top:-18px">${Math.floor(Math.random()*500)+50}</span>
+<button class="btn"><i class="fa-solid fa-share"></i></button><span style="font-size:12px;font-weight:600;margin-top:-18px">Share</span>
+<button class="btn" onclick="next(${i})"><i class="fa-solid fa-bookmark"></i></button>
+</div>
+</div>`;
+});
+document.getElementById("app").innerHTML=html;
+videos.forEach((_,i)=>{
+const vid=document.getElementById("v"+i);
+const prog=document.getElementById("p"+i);
+vid.addEventListener("timeupdate",()=>{prog.style.width=(vid.currentTime/vid.duration*100)+"%";});
+});
+observe();
+}
+function like(i){
+liked[i]=!liked[i];
+likes[i]+=liked[i]?1:-1;
+render();
+setTimeout(()=>{document.getElementById("app").scrollTop=i*window.innerHeight;},50);
+}
+function next(i){
+document.getElementById("app").scrollTo({top:(i+1)*window.innerHeight,behavior:"smooth"});
+}
+function observe(){
+const obs=new IntersectionObserver((entries)=>{
+entries.forEach(e=>{
+const vid=e.target.querySelector("video");
+if(e.isIntersecting){vid.play().catch(()=>{});}else{vid.pause();}
+});
+},{threshold:0.7});
+document.querySelectorAll(".clip").forEach(c=>obs.observe(c));
+}
+render();
+</script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>CLIPZEE - Viral Shorts</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#000;color:#fff;font-family:-apple-system,BlinkMacSystemFont,sans-serif;overflow:hidden;height:100vh;width:100vw}
+#app{height:100vh;width:100vw;overflow-y:scroll;scroll-snap-type:y mandatory;-webkit-overflow-scrolling:touch}
+.clip{height:100vh;width:100vw;position:relative;scroll-snap-align:start;background:#111;display:flex;align-items:center;justify-content:center}
+.clip video{height:100%;width:100%;object-fit:cover}
+.overlay{position:absolute;inset:0;background:linear-gradient(transparent 60%,rgba(0,0,0,0.8));pointer-events:none}
+.left{position:absolute;bottom:20px;left:12px;right:80px;pointer-events:none}
+.left h3{font-size:15px;margin-bottom:4px}
+.left p{font-size:13px;opacity:0.9}
+.right{position:absolute;right:8px;bottom:80px;display:flex;flex-direction:column;gap:22px;align-items:center}
+.btn{width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,0.15);display:flex;align-items:center;justify-content:center;font-size:22px;backdrop-filter:blur(10px);border:none;color:#fff}
+.btn.liked{background:#ff0050;color:#fff}
+.logo{position:fixed;top:12px;left:12px;z-index:99;font-weight:900;font-size:22px;letter-spacing:-1px}
+.logo span{color:#ff0050}
+.topbar{position:fixed;top:12px;left:0;right:0;z-index:98;display:flex;justify-content:center;gap:20px;font-size:14px;font-weight:600}
+.topbar div{opacity:0.6}.topbar div.active{opacity:1;border-bottom:2px solid #fff;padding-bottom:2px}
+.progress{position:absolute;top:0;left:0;height:3px;background:#ff0050;width:0%;z-index:10;transition:width 0.1s}
+</style>
+</head>
+<body>
+<div class="logo">CLIP<span>ZEE</span></div>
+<div class="topbar"><div class="active">For You</div><div>Following</div><div>Live</div></div>
+<div id="app"></div>
+<script>
+const videos=[
+"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+];
+const users=["@sihlalo_swazi","@clipzee_official","@viral_eswatini","@manzini_creator","@mzansi_vibes"];
+const descs=["POV: You found the best app in Eswatini 🔥 #clipzee #fyp","No cap this hits different 😭❤️ #viral","Manzini stand up!! 🇸🇿 #eswatini","Rate this 1-10?? 👀","Follow for daily fire clips 💯"];
+let liked=[false,false,false,false,false,false];
+let likes=[12400,8934,45200,3210,98700,5432];
+function render(){
+let html="";
+videos.forEach((v,i)=>{
+html+=`
+<div class="clip" id="clip${i}">
+<div class="progress" id="p${i}"></div>
+<video src="${v}" loop playsinline onclick="this.paused?this.play():this.pause()" id="v${i}"></video>
+<div class="overlay"></div>
+<div class="left">
+<h3>${users[i%users.length]} • <span style="border:1px solid #fff;padding:1px 6px;border-radius:4px;font-size:11px">Follow</span></h3>
+<p>${descs[i%descs.length]}</p>
+<p style="margin-top:8px">♫ Original sound - clipzee viral mix</p>
+</div>
+<div class="right">
+<div style="text-align:center"><div class="btn" style="background:#fff;color:#000;width:52px;height:52px;border:2px solid #fff;overflow:hidden"><img src="https://i.pravatar.cc/100?img=${i+5}" style="width:100%;height:100%;object-fit:cover"></div><div style="background:#ff0050;border-radius:50%;width:18px;height:18px;margin:-10px auto 0;display:flex;align-items:center;justify-content:center;font-size:12px">+</div></div>
+<button class="btn ${liked[i]?'liked':''}" onclick="like(${i})"><i class="fa-solid fa-heart"></i></button><span style="font-size:12px;font-weight:600;margin-top:-18px">${(likes[i]/1000).toFixed(1)}K</span>
+<button class="btn"><i class="fa-solid fa-comment-dots"></i></button><span style="font-size:12px;font-weight:600;margin-top:-18px">${Math.floor(Math.random()*500)+50}</span>
+<button class="btn"><i class="fa-solid fa-share"></i></button><span style="font-size:12px;font-weight:600;margin-top:-18px">Share</span>
+<button class="btn" onclick="next(${i})"><i class="fa-solid fa-bookmark"></i></button>
+</div>
+</div>`;
+});
+document.getElementById("app").innerHTML=html;
+videos.forEach((_,i)=>{
+const vid=document.getElementById("v"+i);
+const prog=document.getElementById("p"+i);
+vid.addEventListener("timeupdate",()=>{prog.style.width=(vid.currentTime/vid.duration*100)+"%";});
+});
+observe();
+}
+function like(i){
+liked[i]=!liked[i];
+likes[i]+=liked[i]?1:-1;
+render();
+setTimeout(()=>{document.getElementById("app").scrollTop=i*window.innerHeight;},50);
+}
+function next(i){
+document.getElementById("app").scrollTo({top:(i+1)*window.innerHeight,behavior:"smooth"});
+}
+function observe(){
+const obs=new IntersectionObserver((entries)=>{
+entries.forEach(e=>{
+const vid=e.target.querySelector("video");
+if(e.isIntersecting){vid.play().catch(()=>{});}else{vid.pause();}
+});
+},{threshold:0.7});
+document.querySelectorAll(".clip").forEach(c=>obs.observe(c));
+}
+render();
+</script>
+</body>
+</html>
